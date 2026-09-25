@@ -1,0 +1,3 @@
+export default function ServiceCard({ service, onSelect }) {
+  return <article className="service-card"><div className={`service-icon ${service.color}`}>{service.icon}</div><div className="service-card-copy"><h3>{service.name}</h3><p>{service.description}</p></div><div className="service-card-footer"><div><span>From</span><strong>${service.price}</strong> <small>{service.unit}</small></div><button className="text-button" onClick={() => onSelect(service.id)}>Choose <span>↗</span></button></div></article>;
+}

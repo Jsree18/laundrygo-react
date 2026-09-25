@@ -1,0 +1,3 @@
+export default function Footer({ navigate }) {
+  return <footer className="site-footer"><div className="footer-main"><div><button className="brand footer-brand" onClick={() => navigate('home')}><span className="brand-mark">L</span><span>Laundry<span>Go</span></span></button><p>More time for what matters.</p></div><div className="footer-links"><button onClick={() => navigate('services')}>Services</button><button onClick={() => navigate('booking')}>Book a pickup</button><button onClick={() => navigate('bookings')}>My bookings</button></div><div className="footer-note"><strong>Questions?</strong><br />hello@laundrygo.example</div></div><div className="footer-bottom"><span>© 2026 LaundryGo</span><span>Made for lighter days.</span></div></footer>;
+}

@@ -1,0 +1,3 @@
+export default function BookingCard({ booking, onTrack }) {
+  return <article className="booking-card"><div className="booking-card-top"><div><span className="eyebrow">{booking.id}</span><h3>{booking.service.name}</h3></div><span className="status-pill">{booking.status}</span></div><div className="booking-card-meta"><span><b>Pickup</b>{booking.date} · {booking.time}</span><span><b>Total</b>${booking.total.toFixed(2)}</span></div><button className="outline-button" onClick={() => onTrack(booking)}>Track order <span>↗</span></button></article>;
+}
